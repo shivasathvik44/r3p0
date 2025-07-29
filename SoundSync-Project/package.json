@@ -1,0 +1,53 @@
+{
+  "name": "syncsound-party",
+  "version": "1.0.0",
+  "description": "Transform multiple phones into a synchronized speaker system for parties and gatherings",
+  "main": "public/index.html",
+  "scripts": {
+    "dev": "npx serve public -p 3000",
+    "build": "node scripts/build.js",
+    "start": "npx serve public",
+    "deploy": "vercel --prod",
+    "lint": "eslint src/js/**/*.js",
+    "format": "prettier --write \"src/**/*.{js,css,html}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "audio",
+    "streaming",
+    "synchronization",
+    "party",
+    "speakers",
+    "supabase",
+    "realtime"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/syncsound-party.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/syncsound-party/issues"
+  },
+  "homepage": "https://syncsound-party.vercel.app",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "socket.io-client": "^4.7.5"
+  },
+  "devDependencies": {
+    "serve": "^14.2.3",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "html-minifier": "^4.0.0",
+    "clean-css": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

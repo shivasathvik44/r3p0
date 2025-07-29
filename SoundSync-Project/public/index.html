@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SyncSound Party</title>
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="/src/css/main.css" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="/public/favicon.ico" />
+</head>
+<body>
+  <!-- Your main app UI mounts in this container -->
+  <div id="app"></div>
+
+  <!-- Supabase client from official CDN -->
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+  <!-- Socket.io client (only if you need it on the frontend) -->
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+
+  <!-- Configuration (environment variables injected by Vercel at build/runtime) -->
+  <script type="module" src="/src/js/config.js"></script>
+
+  <!-- Main application logic -->
+  <script type="module" src="/src/js/app.js"></script>
+</body>
+</html>
