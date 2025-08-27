@@ -8,13 +8,13 @@ const config = {
     url: typeof process !== 'undefined' && process.env 
       ? process.env.NEXT_PUBLIC_SUPABASE_URL 
       : window.location.hostname === 'localhost' 
-        ? 'https://oixmpqqogflcznjnxzyv.supabase.co' 
-        : 'https://your-project.supabase.co',
+        ? '' 
+        : '',
     
     anonKey: typeof process !== 'undefined' && process.env 
       ? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY 
       : window.location.hostname === 'localhost' 
-        ? 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9peG1wcXFvZ2ZsY3puam54enl2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM3MTkzODcsImV4cCI6MjA2OTI5NTM4N30.QDdF9n0rPDdhIMYGKE5p9F-YaqpHqg1o3Mm7hvZmsGE' 
+        ? '' 
         : 'your-public-anon-key'
   },
 
@@ -81,4 +81,5 @@ if (typeof module !== 'undefined' && module.exports) {
   module.exports = config;
 } else {
   window.APP_CONFIG = config;
+
 }
